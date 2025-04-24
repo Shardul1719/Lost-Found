@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lost & Found Board</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <h1>🧭 Community Lost & Found Board</h1>
+    <p>Helping neighbors reconnect with their lost or found belongings.</p>
+  </header>
+
+  <div class="container">
+    <h2>Lost Items</h2>
+    <div class="card-grid">
+      <div class="card">
+        <img src="images/wallet.jpg" alt="Black Wallet">
+        <div class="card-content">
+          <h3>Black Wallet</h3>
+          <p><strong>Location:</strong> Near City Park</p>
+          <p><strong>Description:</strong> Leather wallet with ID and cards inside.</p>
+          <p><strong>Contact:</strong> 9876543210</p>
+        </div>
+      </div>
+    </div>
+
+    <h2>Found Items</h2>
+    <div class="card-grid">
+      <div class="card">
+        <img src="images/keys.jpg" alt="Keys">
+        <div class="card-content">
+          <h3>Set of Keys</h3>
+          <p><strong>Location:</strong> Main Street Bus Stop</p>
+          <p><strong>Description:</strong> Small bunch with a red keychain.</p>
+          <p><strong>Contact:</strong> 9123456789</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="form-section">
+      <h2>Submit a Lost or Found Item</h2>
+      <form>
+        <label for="type">Type:</label>
+        <select id="type" name="type">
+          <option value="lost">Lost</option>
+          <option value="found">Found</option>
+        </select>
+
+        <label for="item-name">Item Name:</label>
+        <input type="text" id="item-name" name="item-name" placeholder="e.g. Red Backpack" />
+
+        <label for="location">Location:</label>
+        <input type="text" id="location" name="location" placeholder="e.g. Near Central Market" />
+
+        <label for="description">Description:</label>
+        <textarea id="description" name="description" rows="4" placeholder="Provide details..."></textarea>
+
+        <label for="contact">Contact Info:</label>
+        <input type="text" id="contact" name="contact" placeholder="e.g. 9876543210" />
+
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>
